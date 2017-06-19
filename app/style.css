@@ -1,0 +1,126 @@
+/* calendar */
+table.calendar		{ border-left:1px solid #999; }
+tr.calendar-row	{  }
+td.calendar-day	{ min-height:80px; font-size:11px; position:relative; } * html div.calendar-day { height:80px; }
+td.calendar-day:hover	{ background:#eceff5; }
+td.calendar-day-np	{ background:#eee; min-height:80px; } * html div.calendar-day-np { height:80px; }
+td.calendar-day-head { background:#ccc; font-weight:bold; text-align:center; width:120px; padding:5px; border-bottom:1px solid #999; border-top:1px solid #999; border-right:1px solid #999; }
+div.day-number		{ background:#999; padding:5px; color:#fff; font-weight:bold; float:right; margin:-5px -5px 0 0; width:20px; text-align:center; }
+/* shared */
+td.calendar-day, td.calendar-day-np { width:120px; padding:5px; border-bottom:1px solid #999; border-right:1px solid #999; }
+
+
+body {
+    font-family: arial;
+    margin: 0px;
+}
+
+/* make drag container visible */
+#redips-drag {
+    display: table;
+}
+
+/* table */
+div#redips-drag table {
+    background-color: #eee;
+}
+
+/* table cells */
+div#redips-drag td {
+    border: 1px solid navy;
+    height: 50px;
+    text-align: center;
+    font-size: 10pt;
+    padding: 2px;
+}
+
+/* drag object (DIV inside table cell) */
+.redips-drag {
+    margin: auto;
+    text-align: center;
+    width: 87px;
+    height: 35px;
+    line-height: 35px;
+    border: 2px solid SteelBlue;
+    background-color: white;
+}
+
+/* "Load" button  */
+.button {
+    margin: 10px;
+    background-color: #6A93D4;
+    color: white;
+    border-width: 1px;
+    width: 125px;
+    padding: 0px;
+}
+
+.descr{
+    display:none;
+    margin-left:-200px;
+    padding:10px;
+    margin-top:-250px;
+    height:200px;
+    -moz-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    box-shadow:0 5px 5px rgba(0,0,0,0.3);
+    background: #FFFFFF;
+    background: -moz-linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
+    background: -ms-linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
+    background: -webkit-linear-gradient(0deg, #F5F5F5 0%, #FFF 25%, #FFF 75%, #F5F5F5 100%);
+    background: linear-gradient(0deg, #f56e6a 0%, #FFF 25%, #76ff75 75%, #F5F5F5 100%);
+    border: 1px solid #777777;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    border-radius: 6px 6px 6px 6px;
+    -moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.redips-drag:hover .descr{
+    display:block;
+    position:absolute;
+    z-index:9999;
+    width:250px;
+}
+
+.descr p{
+    margin-top: 15px !important;
+    text-align: justify !important;
+}
+.descr h1{
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+.descr a{
+    text-decoration: none;
+    color: #4A4A4A !important;
+}
+.descr a:hover{
+    text-decoration: underline;
+    color: #6B6B6B !important ;
+}​
+
+ .table{
+     display: table;
+     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+     background: white;
+     text-align: left;
+     color: black;
+     background:#eceff5;
+ }
+.row{
+    border-bottom: 2px solid #f5d393;
+    border-right: 20px solid white;
+    padding: 8px 10px;
+    background:#ccc; font-weight:bold; text-align:center; padding:5px; border-bottom:1px solid #999; border-top:1px solid #999; border-right:1px solid #999;
+}
+.cell{
+    display: table-cell;
+    display: inline-block;
+    color: black;
+    word-break: break-all;
+}
+
